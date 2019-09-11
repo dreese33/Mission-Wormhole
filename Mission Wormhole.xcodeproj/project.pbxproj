@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B1DBF9E1D5FF5BE00D31F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DBF9D1D5FF5BE00D31F64 /* AppDelegate.swift */; };
+		8B1DBFA01D5FF5BE00D31F64 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B1DBF9F1D5FF5BE00D31F64 /* GameScene.sks */; };
+		8B1DBFA41D5FF5BE00D31F64 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DBFA31D5FF5BE00D31F64 /* GameScene.swift */; };
+		8B1DBFA61D5FF5BE00D31F64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DBFA51D5FF5BE00D31F64 /* GameViewController.swift */; };
+		8B1DBFA91D5FF5BE00D31F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1DBFA71D5FF5BE00D31F64 /* Main.storyboard */; };
+		8B1DBFAB1D5FF5BE00D31F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1DBFAA1D5FF5BE00D31F64 /* Assets.xcassets */; };
+		8B1DBFB91D5FF5BE00D31F64 /* Mission_WormholeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DBFB81D5FF5BE00D31F64 /* Mission_WormholeTests.swift */; };
+		8B1DBFC41D5FF5BE00D31F64 /* Mission_WormholeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DBFC31D5FF5BE00D31F64 /* Mission_WormholeUITests.swift */; };
+		8B23FF6C1EDF5C9B00C934C2 /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B23FF6B1EDF5C9B00C934C2 /* MainScene.sks */; };
+		8B23FF6E1EDF5CC700C934C2 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B23FF6D1EDF5CC700C934C2 /* MainScene.swift */; };
+		8B23FF701EDF615700C934C2 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B23FF6F1EDF615700C934C2 /* Instructions.swift */; };
+		8B23FF721EDF616700C934C2 /* Instructions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B23FF711EDF616700C934C2 /* Instructions.sks */; };
+		8B69A3021D638F5600DBC3ED /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B69A3011D638F5600DBC3ED /* GameOverScene.swift */; };
+		8B8298FB1D64E65C00C2E5CD /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8298FA1D64E65C00C2E5CD /* MainMenuScene.swift */; };
+		8B8298FD1D652FFD00C2E5CD /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B8298FC1D652FFD00C2E5CD /* MainMenuScene.sks */; };
+		8B9DA3E61EC10C8E005E10F0 /* ButtonClick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DA3E51EC10C8E005E10F0 /* ButtonClick.wav */; };
+		8B9DA3E81EC15147005E10F0 /* SpaceShipFlame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DA3E71EC15147005E10F0 /* SpaceShipFlame.mp3 */; };
+		8BB8FE2C1DAE8FAE00707C49 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD17EAF1DAE6F44009120ED /* Default-568h.png */; };
+		8BB8FE2D1DAE8FAF00707C49 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD17EAF1DAE6F44009120ED /* Default-568h.png */; };
+		8BB8FE311DAE940C00707C49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8FE301DAE940C00707C49 /* Default-568h@2x.png */; };
+		8BB8FE331DAE9AC100707C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB8FE321DAE9AC100707C49 /* LaunchScreen.storyboard */; };
+		8BD17EB01DAE6F44009120ED /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD17EAF1DAE6F44009120ED /* Default-568h.png */; };
+		8BD6339E1EC39C7D004F168B /* Bing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8BD6339D1EC39C7D004F168B /* Bing.wav */; };
+		8BD633A41EC3ACFA004F168B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD633A21EC3ACFA004F168B /* Assets.xcassets */; };
+		8BD633A81EC3AECD004F168B /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8BD633A71EC3AECD004F168B /* MyParticle.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B1DBFB51D5FF5BE00D31F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1DBF921D5FF5BE00D31F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1DBF991D5FF5BE00D31F64;
+			remoteInfo = "Mission Wormhole";
+		};
+		8B1DBFC01D5FF5BE00D31F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1DBF921D5FF5BE00D31F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1DBF991D5FF5BE00D31F64;
+			remoteInfo = "Mission Wormhole";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B1DBF9A1D5FF5BE00D31F64 /* Mission Wormhole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission Wormhole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1DBF9D1D5FF5BE00D31F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B1DBF9F1D5FF5BE00D31F64 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8B1DBFA31D5FF5BE00D31F64 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8B1DBFA51D5FF5BE00D31F64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8B1DBFA81D5FF5BE00D31F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B1DBFAA1D5FF5BE00D31F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1DBFAF1D5FF5BE00D31F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1DBFB41D5FF5BE00D31F64 /* Mission WormholeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mission WormholeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1DBFB81D5FF5BE00D31F64 /* Mission_WormholeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission_WormholeTests.swift; sourceTree = "<group>"; };
+		8B1DBFBA1D5FF5BE00D31F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1DBFBF1D5FF5BE00D31F64 /* Mission WormholeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mission WormholeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1DBFC31D5FF5BE00D31F64 /* Mission_WormholeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission_WormholeUITests.swift; sourceTree = "<group>"; };
+		8B1DBFC51D5FF5BE00D31F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B23FF6B1EDF5C9B00C934C2 /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MainScene.sks; path = ../MainScene.sks; sourceTree = "<group>"; };
+		8B23FF6D1EDF5CC700C934C2 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		8B23FF6F1EDF615700C934C2 /* Instructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
+		8B23FF711EDF616700C934C2 /* Instructions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Instructions.sks; sourceTree = "<group>"; };
+		8B69A3011D638F5600DBC3ED /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		8B8298FA1D64E65C00C2E5CD /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		8B8298FC1D652FFD00C2E5CD /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		8B9DA3E51EC10C8E005E10F0 /* ButtonClick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ButtonClick.wav; sourceTree = "<group>"; };
+		8B9DA3E71EC15147005E10F0 /* SpaceShipFlame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SpaceShipFlame.mp3; sourceTree = "<group>"; };
+		8BB8FE301DAE940C00707C49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8BB8FE321DAE9AC100707C49 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BD17EAF1DAE6F44009120ED /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
+		8BD6339D1EC39C7D004F168B /* Bing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bing.wav; sourceTree = "<group>"; };
+		8BD633A21EC3ACFA004F168B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BD633A71EC3AECD004F168B /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B1DBF971D5FF5BE00D31F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFB11D5FF5BE00D31F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFBC1D5FF5BE00D31F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B1DBF911D5FF5BE00D31F64 = {
+			isa = PBXGroup;
+			children = (
+				8BD633A21EC3ACFA004F168B /* Assets.xcassets */,
+				8BB8FE321DAE9AC100707C49 /* LaunchScreen.storyboard */,
+				8B1DBF9C1D5FF5BE00D31F64 /* Mission Wormhole */,
+				8B1DBFB71D5FF5BE00D31F64 /* Mission WormholeTests */,
+				8B1DBFC21D5FF5BE00D31F64 /* Mission WormholeUITests */,
+				8B1DBF9B1D5FF5BE00D31F64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1DBF9B1D5FF5BE00D31F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1DBF9A1D5FF5BE00D31F64 /* Mission Wormhole.app */,
+				8B1DBFB41D5FF5BE00D31F64 /* Mission WormholeTests.xctest */,
+				8B1DBFBF1D5FF5BE00D31F64 /* Mission WormholeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B1DBF9C1D5FF5BE00D31F64 /* Mission Wormhole */ = {
+			isa = PBXGroup;
+			children = (
+				8BD17EAF1DAE6F44009120ED /* Default-568h.png */,
+				8BB8FE301DAE940C00707C49 /* Default-568h@2x.png */,
+				8B1DBF9D1D5FF5BE00D31F64 /* AppDelegate.swift */,
+				8B1DBF9F1D5FF5BE00D31F64 /* GameScene.sks */,
+				8B1DBFA31D5FF5BE00D31F64 /* GameScene.swift */,
+				8BD633A71EC3AECD004F168B /* MyParticle.sks */,
+				8B8298FC1D652FFD00C2E5CD /* MainMenuScene.sks */,
+				8B8298FA1D64E65C00C2E5CD /* MainMenuScene.swift */,
+				8B69A3011D638F5600DBC3ED /* GameOverScene.swift */,
+				8B23FF6F1EDF615700C934C2 /* Instructions.swift */,
+				8B23FF711EDF616700C934C2 /* Instructions.sks */,
+				8B1DBFA51D5FF5BE00D31F64 /* GameViewController.swift */,
+				8B1DBFA71D5FF5BE00D31F64 /* Main.storyboard */,
+				8B23FF6D1EDF5CC700C934C2 /* MainScene.swift */,
+				8B23FF6B1EDF5C9B00C934C2 /* MainScene.sks */,
+				8B1DBFAA1D5FF5BE00D31F64 /* Assets.xcassets */,
+				8BD6339D1EC39C7D004F168B /* Bing.wav */,
+				8B9DA3E71EC15147005E10F0 /* SpaceShipFlame.mp3 */,
+				8B9DA3E51EC10C8E005E10F0 /* ButtonClick.wav */,
+				8B1DBFAF1D5FF5BE00D31F64 /* Info.plist */,
+			);
+			path = "Mission Wormhole";
+			sourceTree = "<group>";
+		};
+		8B1DBFB71D5FF5BE00D31F64 /* Mission WormholeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B1DBFB81D5FF5BE00D31F64 /* Mission_WormholeTests.swift */,
+				8B1DBFBA1D5FF5BE00D31F64 /* Info.plist */,
+			);
+			path = "Mission WormholeTests";
+			sourceTree = "<group>";
+		};
+		8B1DBFC21D5FF5BE00D31F64 /* Mission WormholeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B1DBFC31D5FF5BE00D31F64 /* Mission_WormholeUITests.swift */,
+				8B1DBFC51D5FF5BE00D31F64 /* Info.plist */,
+			);
+			path = "Mission WormholeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B1DBF991D5FF5BE00D31F64 /* Mission Wormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1DBFC81D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission Wormhole" */;
+			buildPhases = (
+				8B1DBF961D5FF5BE00D31F64 /* Sources */,
+				8B1DBF971D5FF5BE00D31F64 /* Frameworks */,
+				8B1DBF981D5FF5BE00D31F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mission Wormhole";
+			productName = "Mission Wormhole";
+			productReference = 8B1DBF9A1D5FF5BE00D31F64 /* Mission Wormhole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B1DBFB31D5FF5BE00D31F64 /* Mission WormholeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1DBFCB1D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission WormholeTests" */;
+			buildPhases = (
+				8B1DBFB01D5FF5BE00D31F64 /* Sources */,
+				8B1DBFB11D5FF5BE00D31F64 /* Frameworks */,
+				8B1DBFB21D5FF5BE00D31F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1DBFB61D5FF5BE00D31F64 /* PBXTargetDependency */,
+			);
+			name = "Mission WormholeTests";
+			productName = "Mission WormholeTests";
+			productReference = 8B1DBFB41D5FF5BE00D31F64 /* Mission WormholeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B1DBFBE1D5FF5BE00D31F64 /* Mission WormholeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1DBFCE1D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission WormholeUITests" */;
+			buildPhases = (
+				8B1DBFBB1D5FF5BE00D31F64 /* Sources */,
+				8B1DBFBC1D5FF5BE00D31F64 /* Frameworks */,
+				8B1DBFBD1D5FF5BE00D31F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1DBFC11D5FF5BE00D31F64 /* PBXTargetDependency */,
+			);
+			name = "Mission WormholeUITests";
+			productName = "Mission WormholeUITests";
+			productReference = 8B1DBFBF1D5FF5BE00D31F64 /* Mission WormholeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B1DBF921D5FF5BE00D31F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Eric Reese";
+				TargetAttributes = {
+					8B1DBF991D5FF5BE00D31F64 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NC7C453YSR;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+					8B1DBFB31D5FF5BE00D31F64 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B1DBF991D5FF5BE00D31F64;
+					};
+					8B1DBFBE1D5FF5BE00D31F64 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B1DBF991D5FF5BE00D31F64;
+					};
+				};
+			};
+			buildConfigurationList = 8B1DBF951D5FF5BE00D31F64 /* Build configuration list for PBXProject "Mission Wormhole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B1DBF911D5FF5BE00D31F64;
+			productRefGroup = 8B1DBF9B1D5FF5BE00D31F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B1DBF991D5FF5BE00D31F64 /* Mission Wormhole */,
+				8B1DBFB31D5FF5BE00D31F64 /* Mission WormholeTests */,
+				8B1DBFBE1D5FF5BE00D31F64 /* Mission WormholeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B1DBF981D5FF5BE00D31F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9DA3E61EC10C8E005E10F0 /* ButtonClick.wav in Resources */,
+				8B8298FD1D652FFD00C2E5CD /* MainMenuScene.sks in Resources */,
+				8B1DBFA91D5FF5BE00D31F64 /* Main.storyboard in Resources */,
+				8BD17EB01DAE6F44009120ED /* Default-568h.png in Resources */,
+				8B23FF721EDF616700C934C2 /* Instructions.sks in Resources */,
+				8B23FF6C1EDF5C9B00C934C2 /* MainScene.sks in Resources */,
+				8B1DBFA01D5FF5BE00D31F64 /* GameScene.sks in Resources */,
+				8BB8FE331DAE9AC100707C49 /* LaunchScreen.storyboard in Resources */,
+				8B1DBFAB1D5FF5BE00D31F64 /* Assets.xcassets in Resources */,
+				8BD633A81EC3AECD004F168B /* MyParticle.sks in Resources */,
+				8BD6339E1EC39C7D004F168B /* Bing.wav in Resources */,
+				8B9DA3E81EC15147005E10F0 /* SpaceShipFlame.mp3 in Resources */,
+				8BD633A41EC3ACFA004F168B /* Assets.xcassets in Resources */,
+				8BB8FE311DAE940C00707C49 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFB21D5FF5BE00D31F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8FE2C1DAE8FAE00707C49 /* Default-568h.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFBD1D5FF5BE00D31F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB8FE2D1DAE8FAF00707C49 /* Default-568h.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1DBF961D5FF5BE00D31F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B23FF701EDF615700C934C2 /* Instructions.swift in Sources */,
+				8B8298FB1D64E65C00C2E5CD /* MainMenuScene.swift in Sources */,
+				8B1DBFA41D5FF5BE00D31F64 /* GameScene.swift in Sources */,
+				8B1DBFA61D5FF5BE00D31F64 /* GameViewController.swift in Sources */,
+				8B23FF6E1EDF5CC700C934C2 /* MainScene.swift in Sources */,
+				8B69A3021D638F5600DBC3ED /* GameOverScene.swift in Sources */,
+				8B1DBF9E1D5FF5BE00D31F64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFB01D5FF5BE00D31F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1DBFB91D5FF5BE00D31F64 /* Mission_WormholeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1DBFBB1D5FF5BE00D31F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1DBFC41D5FF5BE00D31F64 /* Mission_WormholeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B1DBFB61D5FF5BE00D31F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1DBF991D5FF5BE00D31F64 /* Mission Wormhole */;
+			targetProxy = 8B1DBFB51D5FF5BE00D31F64 /* PBXContainerItemProxy */;
+		};
+		8B1DBFC11D5FF5BE00D31F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1DBF991D5FF5BE00D31F64 /* Mission Wormhole */;
+			targetProxy = 8B1DBFC01D5FF5BE00D31F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B1DBFA71D5FF5BE00D31F64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1DBFA81D5FF5BE00D31F64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B1DBFC61D5FF5BE00D31F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B1DBFC71D5FF5BE00D31F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B1DBFC91D5FF5BE00D31F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Reese (NC7C453YSR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Reese (NC7C453YSR)";
+				DEVELOPMENT_TEAM = NC7C453YSR;
+				INFOPLIST_FILE = "Mission Wormhole/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-Wormhole";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4f9026f-5c33-41a6-9cfc-411af660243b";
+				PROVISIONING_PROFILE_SPECIFIER = MissionWormholeDistProv;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B1DBFCA1D5FF5BE00D31F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Reese (NC7C453YSR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Reese (NC7C453YSR)";
+				DEVELOPMENT_TEAM = NC7C453YSR;
+				INFOPLIST_FILE = "Mission Wormhole/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-Wormhole";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4f9026f-5c33-41a6-9cfc-411af660243b";
+				PROVISIONING_PROFILE_SPECIFIER = MissionWormholeDistProv;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8B1DBFCC1D5FF5BE00D31F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mission WormholeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-WormholeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mission Wormhole.app/Mission Wormhole";
+			};
+			name = Debug;
+		};
+		8B1DBFCD1D5FF5BE00D31F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mission WormholeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-WormholeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mission Wormhole.app/Mission Wormhole";
+			};
+			name = Release;
+		};
+		8B1DBFCF1D5FF5BE00D31F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mission WormholeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-WormholeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Mission Wormhole";
+			};
+			name = Debug;
+		};
+		8B1DBFD01D5FF5BE00D31F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Mission WormholeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ReeseGames.Mission-WormholeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Mission Wormhole";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B1DBF951D5FF5BE00D31F64 /* Build configuration list for PBXProject "Mission Wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1DBFC61D5FF5BE00D31F64 /* Debug */,
+				8B1DBFC71D5FF5BE00D31F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1DBFC81D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission Wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1DBFC91D5FF5BE00D31F64 /* Debug */,
+				8B1DBFCA1D5FF5BE00D31F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1DBFCB1D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission WormholeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1DBFCC1D5FF5BE00D31F64 /* Debug */,
+				8B1DBFCD1D5FF5BE00D31F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1DBFCE1D5FF5BE00D31F64 /* Build configuration list for PBXNativeTarget "Mission WormholeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1DBFCF1D5FF5BE00D31F64 /* Debug */,
+				8B1DBFD01D5FF5BE00D31F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B1DBF921D5FF5BE00D31F64 /* Project object */;
+}
